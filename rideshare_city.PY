@@ -24,6 +24,7 @@ class rideshare_city:
         return self.df['Hour'].mode()[0]-1
 
     def common_start_station(self):
+        '''Returns the most common start station as a string'''
         return self.df['Start Station'].mode()[0]
 
     def common_end_station(self):
