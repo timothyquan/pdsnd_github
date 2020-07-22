@@ -21,6 +21,7 @@ class rideshare_city:
         return days[self.df['Day'].mode()[0]-1]
     
     def common_hour(self):
+        '''Returns the most common hour of day for 'Start Time''''
         return self.df['Hour'].mode()[0]-1
 
     def common_start_station(self):
